@@ -10,7 +10,7 @@ dependencies:
     version: 1.1.20
   '@dcloudio/uni-app':
     specifier: 3.0.0-4000820240401001
-    version: 3.0.0-4000820240401001(@dcloudio/types@3.4.8)(postcss@8.4.35)(vue@3.4.21)
+    version: 3.0.0-4000820240401001(@dcloudio/types@3.4.14)(postcss@8.4.35)(vue@3.4.21)
   '@dcloudio/uni-app-plus':
     specifier: 3.0.0-4000820240401001
     version: 3.0.0-4000820240401001(postcss@8.4.35)(vite@4.3.5)(vue@3.4.21)
@@ -55,7 +55,7 @@ dependencies:
     version: 1.5.5
   '@uni-helper/unocss-preset-uni':
     specifier: ^0.2.8
-    version: 0.2.8(@unocss/rule-utils@0.58.8)(typescript@5.3.3)(unocss-applet@0.7.8)(unocss@0.58.9)
+    version: 0.2.8(@unocss/rule-utils@0.58.9)(typescript@5.3.3)(unocss-applet@0.7.8)(unocss@0.58.9)
   luch-request:
     specifier: ^3.1.1
     version: 3.1.1
@@ -74,8 +74,8 @@ dependencies:
 
 devDependencies:
   '@dcloudio/types':
-    specifier: 3.4.8
-    version: 3.4.8
+    specifier: 3.4.14
+    version: 3.4.14
   '@dcloudio/uni-automator':
     specifier: 3.0.0-4000820240401001
     version: 3.0.0-4000820240401001(jest-environment-node@27.5.1)(jest@27.0.4)(postcss@8.4.35)(vue@3.4.21)
@@ -1432,8 +1432,8 @@ packages:
     resolution: {integrity: sha512-mrCMwcINy1IFjU9VUqLeWBkj404yWs5paLDttBcA+eqUjanuUQbBcTVPqlrGgkyzLXDcV2oDDZRSNxNpXi4kMQ==}
     dev: false
 
-  /@dcloudio/types@3.4.8:
-    resolution: {integrity: sha512-IPXuoghLv7qNPOnRuP7vC5++MdRHhE0U7EMw9ia//uOh69fFXZiRTfoHd51+nzciD6R50gqYhbrCCZIxnxhM9Q==}
+  /@dcloudio/types@3.4.14:
+    resolution: {integrity: sha512-VolQeZfTh8pQFsr2IlfIVX93blfvGTuBoJuZUc7iWOqtHV8gDrq6fXLhzsVlgZyuhhRZLOxlo33rkEqnY+ucAw==}
 
   /@dcloudio/uni-app-plus@3.0.0-4000820240401001(postcss@8.4.35)(vite@4.3.5)(vue@3.4.21):
     resolution: {integrity: sha512-zYjE1nik7Uot0PbmdaLr5x1QgdibYo++WFysjrxH09jJGP6kBtuKKPLN3wAooKBMYU7aX99GYZt2nuZFJFE1kg==}
@@ -1519,12 +1519,12 @@ packages:
     resolution: {integrity: sha512-tJqtz03ZwTdsK4baAdVBhOHacWpTrbU7JXZTm/YY2Zy4lQQpM0yX+EAWLs41WyvSdif1h2LLtAbfgf7CFn3wZQ==}
     dev: false
 
-  /@dcloudio/uni-app@3.0.0-4000820240401001(@dcloudio/types@3.4.8)(postcss@8.4.35)(vue@3.4.21):
+  /@dcloudio/uni-app@3.0.0-4000820240401001(@dcloudio/types@3.4.14)(postcss@8.4.35)(vue@3.4.21):
     resolution: {integrity: sha512-7tpaE9WwkUHNzpaquTigSd34H42nCj+jshzw9DrJmSzyC1OtTYwiWXHEIVZm3iJLAGLPBLW+gkm//X5VnULGRw==}
     peerDependencies:
       '@dcloudio/types': ^3.4.8
     dependencies:
-      '@dcloudio/types': 3.4.8
+      '@dcloudio/types': 3.4.14
       '@dcloudio/uni-cloud': 3.0.0-4000820240401001(postcss@8.4.35)(vue@3.4.21)
       '@dcloudio/uni-components': 3.0.0-4000820240401001(postcss@8.4.35)(vue@3.4.21)
       '@dcloudio/uni-i18n': 3.0.0-4000820240401001
@@ -3500,13 +3500,13 @@ packages:
       '@uni-helper/uni-app-types':
         optional: true
     dependencies:
-      '@dcloudio/types': 3.4.8
+      '@dcloudio/types': 3.4.14
       vue3: /vue@3.4.21(typescript@5.3.3)
     transitivePeerDependencies:
       - typescript
     dev: true
 
-  /@uni-helper/unocss-preset-uni@0.2.8(@unocss/rule-utils@0.58.8)(typescript@5.3.3)(unocss-applet@0.7.8)(unocss@0.58.9):
+  /@uni-helper/unocss-preset-uni@0.2.8(@unocss/rule-utils@0.58.9)(typescript@5.3.3)(unocss-applet@0.7.8)(unocss@0.58.9):
     resolution: {integrity: sha512-u3CarsOwCOHWnwxzPiV9n963NDGEGPMch5kRt8i0/8ulyqxjLWJD6leiy7O8GjFEetnaYQvbatOCywd0p91Xxg==}
     requiresBuild: true
     peerDependencies:
@@ -3522,7 +3522,7 @@ packages:
         optional: true
     dependencies:
       '@uni-helper/uni-env': 0.1.1(typescript@5.3.3)
-      '@unocss/rule-utils': 0.58.8
+      '@unocss/rule-utils': 0.58.9
       unocss: 0.58.9(postcss@8.4.35)(vite@4.3.5)
       unocss-applet: 0.7.8
     transitivePeerDependencies:
@@ -3598,10 +3598,6 @@ packages:
 
   /@unocss/core@0.56.5:
     resolution: {integrity: sha512-fx5VhOjSHn0HdV2D34pEwFMAHJcJQRTCp1xEE4GzxY1irXzaa+m2aYf5PZjmDxehiOC16IH7TO9FOWANXk1E0w==}
-    dev: false
-
-  /@unocss/core@0.58.8:
-    resolution: {integrity: sha512-R3KuNTzF6G+bb2Qqg4LNLTWHh4TGU8iQJ4KOlpWHrPKAhDSCZ3XY9lSXoepCPwv+JcGEwA97Msa3zZ5p+QDoFg==}
     dev: false
 
   /@unocss/core@0.58.9:
@@ -3726,14 +3722,6 @@ packages:
     engines: {node: '>=14'}
     dependencies:
       '@unocss/core': 0.56.5
-    dev: false
-
-  /@unocss/rule-utils@0.58.8:
-    resolution: {integrity: sha512-F7TKtTkiV9ICf8JMYO1+Eq/5zrrV7Fw966rQfHfIKrN6Vwo3tw84b5R0bLJghAFtb9UuD7q9eCfy6WBQK0d7Tw==}
-    engines: {node: '>=14'}
-    dependencies:
-      '@unocss/core': 0.58.8
-      magic-string: 0.30.8
     dev: false
 
   /@unocss/rule-utils@0.58.9:
