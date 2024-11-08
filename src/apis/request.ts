@@ -7,7 +7,7 @@ http.setConfig((config) => {
   config.baseURL =
     import.meta.env.MODE == "development"
       ? import.meta.env.VITE_PROXY
-      : import.meta.env.VITE_REQUEST_HOST; /* 根域名 */
+      : import.meta.env.VITE_REQUEST_HOST;
   return config;
 });
 
@@ -36,12 +36,6 @@ http.interceptors.response.use(
   (response) => {
     /*  对响应错误做点什么 （statusCode !== 200）*/
     console.log(response, "reject");
-    if (response.data.code == 40100) {
-      uni.clearStorageSync();
-      uni.navigateTo({
-        url: "/pages/login/login",
-      });
-    }
     return Promise.reject(response);
   }
 );

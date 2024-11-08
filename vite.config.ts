@@ -22,6 +22,7 @@ export default defineConfig((config: ConfigEnv) => {
         [env.VITE_PROXY]: {
           target: env.VITE_REQUEST_HOST,
           changeOrigin: true,
+          rewrite: (path) => path.replace(new RegExp(`^${env.VITE_PROXY}`), ""),
         },
       },
     },
