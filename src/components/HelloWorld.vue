@@ -1,13 +1,11 @@
 <script setup lang="ts">
-import {useHelloWorld} from "@/composables/useHelloWorld";
+import { useHelloWorld } from "@/composables/useHelloWorld";
 
-const {sayHello, msg} = useHelloWorld();
+const { sayHello, msg } = useHelloWorld();
 </script>
 
 <template>
-  <view>{{ msg}}</view>
+  <view>{{ msg }}</view>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
